@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    background: #666;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    padding-top: 5rem;
+    width: 800px;
+    margin: 0 auto;
+}
+.card{
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 2px 3px 10px rgba(0,0,0,0.2);
+    padding: 1rem;
+}
+.btn{
+    color: #42b983;
+    position: relative;
+    border-radius: 99px;
+    border: 1px solid #42b983;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.5rem 1.5rem;
+    font-weight: 700;
+    outline: none;
+    background: #fff;
+    transition: all 0.22s;
+    cursor: pointer;
+    margin-right: 1.5rem;
+}
+.btn.primary{
+    background: #42b983;
+    color: #fff;
+}
+.btn:active{
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.3);
+}
+.btn:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+input[type=file] {
+    display: none;
+}
+.preview{
+    display: flex;
+    flex-wrap: wrap;
+    padding: .5rem;
+}
+
+.preview-image{
+    margin-bottom: .5rem;
+    margin-right: .5rem;
+    position: relative;
+}
+.preview-image:hover .preview-remove{
+    opacity: 1;
+}
+
+.preview-image img {
+    width: 180px;
+    height: auto;
+
+}
+.preview-remove{
+    opacity: 0;
+    transition: opacity 0.3s;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    font-weight: bold;
+    background: rgba(255,255,255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 100%;
+}
